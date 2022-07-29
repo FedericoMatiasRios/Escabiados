@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Escabiados - Contacto</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="flexGridCell">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.png" alt="Escabiados logo" width="300">
+            </a>
+        </div>
+        <div class="flexGridCell">
+            <!-- Nav -->
+            <nav>
+                <!-- CheckBox Hack -->
+                <input type="checkbox" id="toggle">
+                <label id="expandir" for="toggle">&#9776;</label>
+                <!-- Menú -->
+                <ul id="navMenu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="descargar.html">Descargar</a></li>
+                    <li><a href="guia.html">Guía</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <h1 class="flexGridCell">¿Necesitas Contactarnos?</h1>
+        <!-- SECTION 1 - Caja de contacto -->
+        <section>
+            <div id="boxContacto">
+                <form action="#">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="nombre">Nombre:</label>
+                            </td>
+                            <td>
+                                <input class="paddingInput" type="text" name="nombre" id="nombre" size="30"
+                                    placeholder="Federico" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="apellido">Apellido:</label>
+                            </td>
+                            <td>
+                                <input class="paddingInput" type="text" name="apellido" id="apellido" size="30"
+                                    placeholder="Rios" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mail">Mail:</label>
+                            </td>
+                            <td>
+                                <input class="paddingInput" type="email" name="mail" id="mail" size="30"
+                                    placeholder="federicorios@gmail.com" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mensaje">Mensaje:</label>
+                            </td>
+                            <td>
+                                <textarea class="paddingInput" name="mensaje" id="mensaje" rows="6" cols="30"
+                                    placeholder="Escriba aquí su mensaje y le responderemos a la brevedad..."
+                                    required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div class="boxBotones">
+                        <input class="boton" type="submit">
+                        <input class="boton" type="reset" value="Borrar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="flexGridCell">
+            <p>Copyright</p>
+        </div>
+        <div class="flexGridCell">
+            <div class="bloqueRedes">
+                <a href="#"><img src="../img/instagram.png" alt="Instagram" width="50"></a>
+                <a href="#"><img src="../img/facebook.png" alt="Facebook" width="50"></a>
+                <a href="#"><img src="../img/twitter.png" alt="Twitter" width="50"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

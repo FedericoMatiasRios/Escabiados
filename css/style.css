@@ -1,0 +1,432 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Deshabilitar selección de texto*/
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img,
+a {
+  /* Deshabilitar drag and drop de imagenes y enlaces */
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+body {
+  background-image: linear-gradient(-60deg, #3f4650 50%, #2a2e35 50%);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #3f4650;
+  box-shadow: 0 2px 8px 1px #000;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.flexGridCell {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  padding: 0;
+}
+
+h1 {
+  padding: 20px;
+  color: #fff;
+
+  background-color: rgba(0, 0, 0, .25);
+  border-radius: .25em;
+  box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+}
+
+#expandir,
+#toggle {
+  /*CheckBox Hack*/
+  display: none;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #3f4650;
+}
+
+nav li a {
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 28px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-shadow: 0 0 1px #add8e6, 0 0 1px #add8e6, 0 0 1px #add8e6, 0 0 2px #add8e6, 0 0 5px #add8e6, 0 0 10px #add8e6, 0 0 15px #add8e6;
+}
+
+nav li .active {
+  text-shadow: 0 0 1px #add8e6, 0 0 1px #add8e6, 0 0 1px #add8e6, 0 0 2px #add8e6, 0 0 5px #add8e6, 0 0 10px #add8e6, 0 0 15px #add8e6;
+}
+
+main {
+  min-height: calc(100vh - 195px);
+  color: #b1b1b1;
+  box-shadow: inset 0 0 30px #000000;
+  display: flex;
+  flex-direction: column;
+  color: #b1b1b1;
+  align-items: center;
+}
+
+main img {
+  filter: drop-shadow(0px 0px 7px #000);
+}
+
+.personajeIndex {
+  max-width: 80px;
+  margin: 10px;
+}
+
+.personajeDescargar {
+  max-width: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h3,
+h5 {
+  color: #fff;
+  margin: 15px 0px;
+}
+
+.boxColumnas {
+  display: flex;
+  align-items: baseline;
+  height: 100%;
+}
+
+.columna {
+  padding: 0px 145px 30px;
+  text-align: justify;
+}
+
+.fila {
+  width: 85%;
+  margin: 20px;
+}
+
+.columna h2,
+.fila h2 {
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+}
+
+.columna li,
+.fila li {
+  margin: 10px 0px 0px 15px;
+}
+
+.sombra {
+  filter: drop-shadow(0px 0px 7px #000);
+}
+
+.imgHover:hover {
+  filter: drop-shadow(0px 0px 7px #fff);
+  cursor: pointer;
+}
+
+.bloqueRedes {
+  text-align: center;
+}
+
+.bloqueImagenes {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.bloqueImagenes img {
+  display: inline-block;
+  height: 300px;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  background-color: #3f4650;
+  color: #fff;
+  height: 120px;
+  width: 100%;
+  border-top: dotted #202023 3px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+#mensaje {
+  width: 253px;
+}
+
+#boxContacto {
+  padding: 40px;
+  border-radius: 12px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.paddingInput {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.boxBotones {
+  text-align: center;
+}
+
+.boton {
+  padding: 5px 55px 5px 55px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #3f4650;
+  color: #fff;
+  border: solid 2px #fff;
+}
+
+.boton:hover {
+  background-color: #fff;
+  color: #000;
+  border: solid 2px #fff;
+}
+
+a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* https://freefrontend.com/css-animated-backgrounds/ */
+.bg {
+  animation: slide 3s ease-in-out 1 alternate;
+  animation-fill-mode: forwards;
+  background-image: linear-gradient(-60deg, #3f4650 50%, #2a2e35 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* Grid para Blog */
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  align-items: stretch;
+  padding: 30px;
+}
+
+.grid>article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid>article img {
+  max-width: 100%;
+}
+
+.text {
+  padding: 0 20px 20px;
+}
+
+.text>button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+.text>button>a {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  .boxColumnas {
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .boxColumnas {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .columna {
+    padding: 0px 45px 30px;
+    width: 100vw;
+  }
+
+  nav li {
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px grey;
+  }
+
+  nav {
+    height: 78px;
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px grey;
+  }
+
+  #navMenu {
+    display: none;
+  }
+
+  #expandir {
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding: 28px 16px;
+  }
+
+  /*Para Mobile usamos CheckBox Hack, ya que no reconce Hover y en esta instancia no podemos utilizar JavaScript*/
+  #toggle:checked~#navMenu {
+    display: block;
+  }
+
+  #toggle:checked~#expandir {
+    /*Estaba jugando con transform y el menú hamburguesa quedó como un signo "-", me gustó y lo dejé*/
+    transform: rotateX(80deg);
+  }
+
+  #toggle:not(:checked)~#navMenu {
+    display: none;
+  }
+
+  .bloqueImagenes img:nth-child(1) {
+    display: none;
+  }
+
+  .bloqueImagenes img:nth-child(2) {
+    width: 100%;
+    height: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .boton {
+    padding: 5px 35px 5px 35px;
+  }
+
+  #boxContacto td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #boxContacto label {
+    display: none;
+  }
+
+  table {
+    text-align: left;
+  }
+
+  table tr:nth-child(2) td:nth-child(6),
+  table tr:nth-child(3) td:nth-child(6),
+  table tr:nth-child(4) td:nth-child(6),
+  table th:nth-child(6),
+  table tr:nth-child(2) td:nth-child(5),
+  table tr:nth-child(3) td:nth-child(5),
+  table tr:nth-child(4) td:nth-child(5),
+  table th:nth-child(5) {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: auto;
+  }
+}
