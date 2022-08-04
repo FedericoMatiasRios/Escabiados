@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <!-- Main CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Escabiados - Guía</title>
 </head>
@@ -40,46 +43,71 @@
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
         <h1 class="flexGridCell fadeInDown animated">Guía para Jugar Escabiados</h1>
-        <!-- SECTION 1 - Guía del juego -->
-        <section class="fila">
-            <p>Escabiados es un juego muy simple. Cuantos más jugadores son, más divertido es. La app se basa en un
-                mazo
-                de cartas virtuales que contienen penitencias y desafíos para beber o hacer beber a otros.</p>
-            <div class="bloqueImagenes">
-                <img src="../img/ronda.jpg" alt="Amigos en ronda jugando Escabiados" width="200">
-                <img src="../img/ronda-dos.jpg" alt="Amigos en ronda jugando Escabiados" height="300">
+
+        <!-- SECTION 1 - Bootstrap - Guía del juego -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <div class="pasos animated fadeInLeft">
+                            <h3>1</h3>
+                            <p><b>¡Colóquense en ronda!</b> Elige bien tu posición para desafiar a quien tengas a tu
+                                lado.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <div class="pasos animated zoomIn">
+                            <h3>2</h3>
+                            <p><b>Abre la App Escabiados.</b> Espera a que cargue, verás una carta volteada.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <div class="pasos animated fadeInRight">
+                            <h3>3</h3>
+                            <p><b>Voltea la carta.</b> Toca la pantalla para voltear la carta y así revelar su
+                                contenido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <div class="pasos animated fadeInLeft">
+                            <h3>4</h3>
+                            <p><b>Gana o bebe.</b> Cumple la penitencia o gana el desafío para evitar beber.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <div class="pasos animated fadeInRight">
+                            <h3>5</h3>
+                            <p><b>Pasa el dispositivo.</b> El jugador a tu izquierda debe voltear la próxima carta.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                    </div>
+                </div>
             </div>
-            <ol>
-                <li>Lo primero que deben hacer tu y tu grupo de amigos es colocarse en una ronda, esto es importante
-                    ya
-                    que los desafíos del juego generalmente se hacen con las personas que tengas al lado.</li>
-                <li>Abre la aplicación y espera a que cargue, verás una carta volteada.</li>
-                <li>Toca la pantalla para voltear la carta y revelar su contenido.</li>
-                <li>Sigue las instrucciones que se encuentran en la carta.</li>
-                <li>Cumple la penitencia o gana el desafío para evitar beber.</li>
-            </ol>
         </section>
 
-
-        <div class="fila">
+        <!-- SECTION 2 - Ejemplos -->
+        <section class="fila">
             <h2>Ejemplo de rondas</h2>
-            <p>Si aún te quedan dudas de como jugar, a continuación ejemplificaremos algunas cartas y rondas del
-                juego
-                para que comprendas mejor.</p>
-        </div>
-
-        <div class="boxColumnas">
-            <!-- SECTION 2 - Primer ejemplo -->
-            <section class="flexGridCell columna">
+            <p>Escabiados es un juego muy simple. Cuantos más jugadores son, más divertido es. La app se basa en un
+                mazo de cartas virtuales que contienen penitencias y desafíos para beber o hacer beber a otros. Si aún
+                te quedan dudas de como jugar, a continuación ejemplificaremos algunas cartas y rondas del
+                juego para que comprendas mejor.</p>
+            <!-- Primer ejemplo -->
+            <div class="flexGridCell columna">
                 <h3>Ejemplo 1</h3>
-                <table border="1" cellpadding="1" cellspacing="1">
+                <table class="tablaGuia">
                     <tr>
-                        <th>Carta: nombrar personajes de los simpsons</th>
-                        <th>Jugador 1</th>
-                        <th>Jugador 2</th>
-                        <th>Jugador 3</th>
-                        <th>Jugador 4</th>
-                        <th>Jugador 5</th>
+                        <th class="fullWidth">Carta: nombrar personajes de los simpsons</th>
+                        <th class="fullWidth">Jugador 1</th>
+                        <th class="fullWidth">Jugador 2</th>
+                        <th class="fullWidth">Jugador 3</th>
+                        <th class="fullWidth">Jugador 4</th>
+                        <th class="fullWidth">Jugador 5</th>
                     </tr>
                     <tr>
                         <td>Ronda 1</td>
@@ -101,26 +129,27 @@
                         <td>Ronda 3</td>
                         <td>Sr. Burns</td>
                         <td>Smithers</td>
-                        <td>No sabe que decir... (Bebe!)</td>
+                        <td>No sabe... (Bebe!)</td>
                         <td>-</td>
                         <td>-</td>
                     </tr>
                 </table>
                 <br>
-                <p>En este primer ejemplo, el Jugador 3 perdió en la Ronda 3 debido a que fue el primero en no saber que
+                <p>En este primer ejemplo, el Jugador 3 perdió en la Ronda 3 debido a que fue el primero en no saber
+                    que
                     personaje nombrar.</p>
-            </section>
-            <!-- SECTION 3 - Segundo ejemplo -->
-            <section class="flexGridCell columna">
+            </div>
+            <!-- Segundo ejemplo -->
+            <div class="flexGridCell columna">
                 <h3>Ejemplo 2</h3>
-                <table border="1" cellpadding="1" cellspacing="1">
+                <table class="tablaGuia">
                     <tr>
-                        <th>Carta: nombrar colores</th>
-                        <th>Jugador 1</th>
-                        <th>Jugador 2</th>
-                        <th>Jugador 3</th>
-                        <th>Jugador 4</th>
-                        <th>Jugador 5</th>
+                        <th class="fullWidth">Carta: nombrar colores</th>
+                        <th class="fullWidth">Jugador 1</th>
+                        <th class="fullWidth">Jugador 2</th>
+                        <th class="fullWidth">Jugador 3</th>
+                        <th class="fullWidth">Jugador 4</th>
+                        <th class="fullWidth">Jugador 5</th>
                     </tr>
                     <tr>
                         <td>Ronda 1</td>
@@ -148,10 +177,11 @@
                     </tr>
                 </table>
                 <br>
-                <p>En este segundo ejemplo, el Jugador 1 perdió ya que durante la Ronda 3 repitió un color que ya había
+                <p>En este segundo ejemplo, el Jugador 1 perdió ya que durante la Ronda 3 repitió un color que ya
+                    había
                     dicho el Jugador 2 en la Ronda 1.</p>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>
@@ -166,6 +196,8 @@
             </div>
         </div>
     </footer>
+    <!-- Bootstrap JS -->
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
