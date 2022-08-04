@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Escabiados - Inicio</title>
 </head>
@@ -42,9 +45,11 @@
         <h1 class="flexGridCell fadeInDown animated">¡Bienvenid@ a la Web de Escabiados!</h1>
         <!-- SECTION 1 - Bienvenida -->
         <div class="boxColumnas">
-            <section class="flexGridCell columna fadeInLeft animated">
+            <section class="flexGridCell columna fadeInLeft animated centrarColIndex">
                 <div class="animated zoomInDown">
-                <img class="personajeIndex animated animarHover" src="img/personaje-uno.png" alt="Personaje de Escabiados" width="100">
+                    <img class="personajeIndex animated animarHover" src="img/personaje-uno.png"
+                        alt="Personaje de Escabiados" width="100" data-toggle="tooltip" data-placement="right"
+                        title="¡La mejor App para tus previas!">
                 </div>
                 <h2>¿Qué es Escabiados?</h2>
                 <p>Escabiados es una aplicación disponible tanto para iOS como para Android que te permitirá disfrutar
@@ -55,9 +60,11 @@
                         href="pages/descargar.html">¡Descargala ahora mismo y empieza a escabiar!</a></p>
             </section>
             <!-- SECTION 2 - Como jugar -->
-            <section class="flexGridCell columna fadeInRight animated">
+            <section class="flexGridCell columna fadeInRight animated centrarColIndex">
                 <div class="animated zoomInDown">
-                <img class="personajeIndex animated animarHover" src="img/personaje-tres.png" alt="Personaje de Escabiados" width="100">
+                    <img class="personajeIndex animated animarHover" src="img/personaje-tres.png"
+                        alt="Personaje de Escabiados" width="100" data-toggle="tooltip" data-placement="left"
+                        title="¡Sólo tienes que beber!">
                 </div>
                 <h2>¿Cómo se juega?</h2>
                 <p>Cualquiera puede jugar a Escabiados, solo necesitás tener un dispositivo móvil y descargar la app.
@@ -81,6 +88,16 @@
             </div>
         </div>
     </footer>
+    <!-- Jquery necesario para Tooltip -->
+    <script src="./libs/jquery/jquery-3.0.0.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Inicializar Tooltip Bootstrap -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
