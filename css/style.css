@@ -151,7 +151,7 @@ h5 {
 }
 
 .centrarBoxContacto {
-  height: calc(100vh - 268px);
+
   display: flex;
   align-items: center;
 }
@@ -755,6 +755,7 @@ a {
   .centrarBoxContacto {
     height: 41vh;
     min-height: 370px;
+    height: calc(100vh - 268px);
   }
 }
 
