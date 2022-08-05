@@ -151,9 +151,10 @@ h5 {
 }
 
 .centrarBoxContacto {
-
+  min-height: 370px;
   display: flex;
   align-items: center;
+  height: 41vh;
 }
 
 .fila {
@@ -214,7 +215,7 @@ footer p {
 }
 
 #boxContacto {
-  padding: 40px;
+  padding: 20px 40px;
   border-radius: 12px;
   margin: 25px;
   display: flex;
@@ -739,11 +740,9 @@ a {
   html {
     zoom: 150%;
   }
-
   main {
     min-height: calc(49vh);
   }
-
   .centrarColIndex {
     min-height: unset;
   }
@@ -751,15 +750,15 @@ a {
   .centrarColDescargar {
     min-height: unset;
   }
-
-  .centrarBoxContacto {
-    height: 41vh;
-    min-height: 370px;
-    height: calc(100vh - 268px);
-  }
 }
 
 @media (max-width: 992px) {
+  .centrarColIndex {
+    min-height: unset;
+  }
+  .centrarColDescargar {
+    min-height: unset;
+  }
   .boxColumnas {
     flex-direction: column;
   }
@@ -787,7 +786,6 @@ a {
 
   .columna {
     padding: 0px 45px 30px;
-    width: 100vw;
   }
 
   nav li {
