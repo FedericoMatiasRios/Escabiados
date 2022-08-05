@@ -223,9 +223,14 @@ footer p {
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
+#boxContacto textarea {
+  width: -webkit-fill-available;
+}
+
 .paddingInput {
   padding: 5px;
   border-radius: 5px;
+  margin: 2px;
 }
 
 .boxBotones {
@@ -714,20 +719,19 @@ a {
   padding: 0 20px 20px;
 }
 
-.text>button {
-  background: gray;
-  border: 0;
-  color: white;
-  padding: 10px;
-  width: 100%;
+.text>button, .boxBotones input {
   margin-top: 10px;
-  border-radius: 25px;
+  border: solid 1px #fff;
 }
 
-.text>button>a {
-  display: inline-block;
-  width: 100%;
+.boxBotones input {
+  padding: 6px 50px;
 }
+
+.text>button:hover, .boxBotones input:hover {
+  border: solid 1px #fff !important;
+}
+
 
 /* Media Queries */
 
@@ -751,10 +755,6 @@ a {
   .centrarBoxContacto {
     height: 41vh;
     min-height: 370px;
-  }
-
-  #boxContacto textarea {
-    width: -webkit-fill-available;
   }
 }
 
