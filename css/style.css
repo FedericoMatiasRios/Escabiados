@@ -42,10 +42,6 @@ header {
   align-items: center;
 }
 
-header {
-  line-height: 0 !important;
-}
-
 .flexGridCell {
   width: 100%;
   display: flex;
@@ -235,7 +231,7 @@ footer p {
 }
 
 .transicionBrillo:hover {
-  box-shadow: 0 0 6px #ccc;
+  box-shadow: 0 0 6px #add8e6;
 }
 
 button {
@@ -795,6 +791,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  header {
+    line-height: 0 !important;
+  }
+
   .boxColumnas {
     flex-direction: column;
     padding: 0;
