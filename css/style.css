@@ -221,11 +221,29 @@ footer p {
   display: flex;
   justify-content: center;
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
 #boxContacto textarea {
   width: -webkit-fill-available;
+}
+
+.transicionBrillo {
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.transicionBrillo:hover {
+  box-shadow: 0 0 6px #ccc;
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.01);
 }
 
 .paddingInput {
@@ -709,7 +727,6 @@ a {
 
 .grid>article {
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
 .grid>article img {
@@ -720,7 +737,8 @@ a {
   padding: 0 20px 20px;
 }
 
-.text>button, .boxBotones input {
+.text>button,
+.boxBotones input {
   margin-top: 10px;
   border: solid 1px #fff;
 }
@@ -729,10 +747,10 @@ a {
   padding: 6px 50px;
 }
 
-.text>button:hover, .boxBotones input:hover {
+.text>button:hover,
+.boxBotones input:hover {
   border: solid 1px #fff !important;
 }
-
 
 /* Media Queries */
 
@@ -740,9 +758,11 @@ a {
   html {
     zoom: 150%;
   }
+
   main {
     min-height: calc(49vh);
   }
+
   .centrarColIndex {
     min-height: unset;
   }
@@ -756,9 +776,11 @@ a {
   .centrarColIndex {
     min-height: unset;
   }
+
   .centrarColDescargar {
     min-height: unset;
   }
+
   .boxColumnas {
     flex-direction: column;
   }
@@ -889,5 +911,11 @@ a {
 
   .grid {
     grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  #boxContacto {
+    padding: 20px 20px;
   }
 }
