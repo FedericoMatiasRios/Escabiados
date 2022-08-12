@@ -1,0 +1,4 @@
+/* Mixins */
+@mixin textGlow {
+    text-shadow: 0 0 1px $glowColor, 0 0 1px $glowColor, 0 0 1px $glowColor, 0 0 2px $glowColor, 0 0 5px $glowColor, 0 0 10px $glowColor, 0 0 15px $glowColor;
+}
