@@ -3,7 +3,7 @@
 /* Colores */
 /* Otras */
 /* Placeholders */
-.boxBotones, #boxContacto, footer, .centrarBoxContacto, main, nav li, nav ul, .flexGridCell, header {
+.boxBotones, #boxContacto, footer, main, nav li, nav ul, .flexGridCell, header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +98,7 @@ nav li .active {
 
 main {
   flex-direction: column;
-  min-height: calc(100vh - 195px);
+  min-height: calc(100vh - 194px);
   color: #b1b1b1;
   box-shadow: inset 0 0 8px #000000;
   margin-top: -77px;
@@ -131,18 +131,6 @@ h5 {
   display: flex;
   align-items: baseline;
   height: 100%;
-}
-
-.centrarColIndex {
-  min-height: calc(100vh - 272px);
-}
-
-.centrarColDescargar {
-  min-height: calc(80vh - 415.5px);
-}
-
-.centrarBoxContacto {
-  min-height: calc(100vh - 271px);
 }
 
 .fila {
@@ -594,7 +582,7 @@ a {
   border: 1px solid #ccc;
 }
 .grid > article img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .text {
@@ -617,27 +605,12 @@ a {
 }
 
 /* Media Queries */
-@media (min-width: 1920px) {
-  html {
-    zoom: 150%;
-  }
-  main {
-    min-height: calc(49vh - 4px);
-  }
-  .centrarColIndex,
-.centrarColDescargar,
-.centrarBoxContacto {
-    min-height: unset;
-  }
-}
-@media (max-width: 992px) {
+@media (max-width: 1041px) {
   main {
     min-height: calc(100vh - 212px);
   }
-  .centrarColIndex,
-.centrarColDescargar {
-    min-height: unset;
-  }
+}
+@media (max-width: 992px) {
   .boxColumnas {
     flex-direction: column;
   }
@@ -716,9 +689,6 @@ a {
   main {
     min-height: calc(100vh - 260px);
   }
-  .centrarBoxContacto {
-    min-height: calc(100vh - 337px);
-  }
   header {
     flex-direction: column;
   }
@@ -749,7 +719,7 @@ table th:nth-child(5) {
     padding: 20px 30px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 472px) {
   main {
     min-height: calc(100vh - 270px);
     margin-top: -95px;
