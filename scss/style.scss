@@ -1,6 +1,7 @@
 @import "variables";
 @import "placeholders";
 @import "mixins";
+@import "maps";
 
 * {
   box-sizing: border-box;
@@ -59,9 +60,7 @@ h1 {
   padding: 20px;
   color: $secondaryColor;
   background-color: $opacityColor;
-  border-radius: 0.25em;
   box-shadow: $shadowSize $opacityColor;
-  box-sizing: border-box;
 }
 
 #expandir,
@@ -71,32 +70,34 @@ h1 {
   cursor: pointer;
 }
 
-nav ul {
-  @extend %flex;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: $primaryColor;
-}
+nav {
+  ul {
+    @extend %flex;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: $primaryColor;
+  }
 
-nav li {
-  @extend %flex;
-}
+  li {
+    @extend %flex;
 
-nav li a {
-  font-weight: 600;
-  display: block;
-  color: $secondaryColor;
-  text-align: center;
-  padding: 28px 16px;
-  text-decoration: none;
-}
+    a {
+      font-weight: 600;
+      display: block;
+      color: $secondaryColor;
+      text-align: center;
+      padding: 28px 16px;
+      text-decoration: none;
+    }
 
-nav li a:hover {
-  @include textGlow;
-}
+    a:hover {
+      @include textGlow;
+    }
 
-nav li .active {
-  @include textGlow;
+    .active {
+      @include textGlow;
+    }
+  }
 }
 
 main {
@@ -105,13 +106,12 @@ main {
   min-height: calc(100vh - 195px);
   color: #b1b1b1;
   box-shadow: inset $shadowSize #000000;
-  color: #b1b1b1;
   margin-top: -77px;
   padding-top: 77px;
-}
 
-main img {
-  filter: drop-shadow($shadowSize #000);
+  img {
+    filter: drop-shadow($shadowSize #000);
+  }
 }
 
 .personajeIndex {
@@ -139,11 +139,6 @@ h5 {
   height: 100%;
 }
 
-.columna {
-  padding: 0px 145px 30px;
-  text-align: justify;
-}
-
 .centrarColIndex {
   min-height: calc(100vh - 272px);
 }
@@ -160,6 +155,11 @@ h5 {
 .fila {
   width: 85%;
   margin: 20px;
+}
+
+.columna {
+  padding: 0px 145px 30px;
+  text-align: justify;
 }
 
 .columna h2,
@@ -204,10 +204,10 @@ footer {
   color: $secondaryColor;
   height: 120px;
   width: 100%;
-}
 
-footer p {
-  margin-bottom: 10px;
+  p {
+    margin-bottom: 10px;
+  }
 }
 
 #mensaje {
@@ -217,14 +217,14 @@ footer p {
 #boxContacto {
   @extend %flex;
   padding: 20px 40px;
-  border-radius: 12px;
+  border-radius: map-get($rounded, "medium");
   margin: 25px;
   border: 1px solid #ccc;
-}
 
-#boxContacto textarea,
-#boxContacto input {
-  width: -webkit-fill-available;
+  textarea,
+  input {
+    width: -webkit-fill-available;
+  }
 }
 
 .transicionBrillo {
@@ -232,23 +232,23 @@ footer p {
   transition-duration: 0.5s;
   transition-timing-function: linear;
   box-shadow: $shadowSize $opacityColor;
-}
 
-.transicionBrillo:hover {
-  box-shadow: $shadowSize $glowColor;
+  &:hover {
+    box-shadow: $shadowSize $glowColor;
+  }
 }
 
 button {
   transition: all 0.2s ease-in-out;
-}
 
-button:hover {
-  transform: scale(1.01);
+  &:hover {
+    transform: scale(1.01);
+  }
 }
 
 .paddingInput {
   padding: 5px;
-  border-radius: 5px;
+  border-radius: map-get($rounded, "small");
   margin: 2px;
 }
 
@@ -678,14 +678,14 @@ a {
   box-shadow: $shadowSize $opacityColor;
   margin: 35px 5px 0;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: map-get($rounded, "medium");
 }
 
 .tablaGuia {
   background-color: $opacityColor;
   box-shadow: $shadowSize $opacityColor;
   text-align: center;
-  border-radius: 25px;
+  border-radius: map-get($rounded, "large");
   border-collapse: separate;
   border-spacing: 15px;
 }
@@ -707,14 +707,14 @@ a {
   grid-gap: 20px;
   align-items: stretch;
   padding: 30px;
-}
 
-.grid>article {
-  border: 1px solid #ccc;
-}
+  &>article {
+    border: 1px solid #ccc;
 
-.grid>article img {
-  max-width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .text {
@@ -733,7 +733,7 @@ a {
 
 .text>button:hover,
 .boxBotones input:hover {
-  border: solid 1px $secondaryColor  !important;
+  border: solid 1px $secondaryColor !important;
 }
 
 /* Media Queries */
@@ -747,17 +747,12 @@ a {
     min-height: calc(49vh - 4px);
   }
 
-  .centrarColIndex {
-    min-height: unset;
-  }
-
-  .centrarColDescargar {
-    min-height: unset;
-  }
-
+  .centrarColIndex,
+  .centrarColDescargar,
   .centrarBoxContacto {
     min-height: unset;
   }
+
 }
 
 @media (max-width: 992px) {
@@ -765,10 +760,7 @@ a {
     min-height: calc(100vh - 212px);
   }
 
-  .centrarColIndex {
-    min-height: unset;
-  }
-
+  .centrarColIndex,
   .centrarColDescargar {
     min-height: unset;
   }
@@ -810,19 +802,19 @@ a {
     padding: 0px 45px 30px;
   }
 
-  nav li {
-    height: 50px !important;
-    border-bottom: solid 1px grey;
-  }
-
   nav {
     height: 78px;
     width: 100%;
-  }
 
-  nav ul {
-    flex-direction: column;
-    border: solid 1px grey;
+    li {
+      height: 50px !important;
+      border-bottom: solid 1px grey;
+    }
+
+    ul {
+      flex-direction: column;
+      border: solid 1px grey;
+    }
   }
 
   #navMenu {
@@ -888,23 +880,18 @@ a {
     padding: 5px 35px 5px 35px;
   }
 
-  #boxContacto label {
-    display: none;
-  }
-
   table {
     text-align: left;
-  }
-
-  table tr:nth-child(2) td:nth-child(6),
-  table tr:nth-child(3) td:nth-child(6),
-  table tr:nth-child(4) td:nth-child(6),
-  table th:nth-child(6),
-  table tr:nth-child(2) td:nth-child(5),
-  table tr:nth-child(3) td:nth-child(5),
-  table tr:nth-child(4) td:nth-child(5),
-  table th:nth-child(5) {
-    display: none;
+    tr:nth-child(2) td:nth-child(6),
+    tr:nth-child(3) td:nth-child(6),
+    tr:nth-child(4) td:nth-child(6),
+    th:nth-child(6),
+    tr:nth-child(2) td:nth-child(5),
+    tr:nth-child(3) td:nth-child(5),
+    tr:nth-child(4) td:nth-child(5),
+    th:nth-child(5) {
+      display: none;
+    }
   }
 
   .grid {

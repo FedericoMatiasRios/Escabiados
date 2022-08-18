@@ -1,24 +1,16 @@
 @charset "UTF-8";
-
 /* Variables */
 /* Colores */
 /* Otras */
 /* Placeholders */
-.boxBotones,
-#boxContacto,
-footer,
-.centrarBoxContacto,
-main,
-nav li,
-nav ul,
-.flexGridCell,
-header {
+.boxBotones, #boxContacto, footer, .centrarBoxContacto, main, nav li, nav ul, .flexGridCell, header {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Mixins */
+/* Mixins */ /* Maps */
+/* border-radius */
 * {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
@@ -74,9 +66,7 @@ h1 {
   padding: 20px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 0.25em;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
 }
 
 #expandir,
@@ -91,7 +81,6 @@ nav ul {
   overflow: hidden;
   background-color: #3f4650;
 }
-
 nav li a {
   font-weight: 600;
   display: block;
@@ -100,11 +89,9 @@ nav li a {
   padding: 28px 16px;
   text-decoration: none;
 }
-
 nav li a:hover {
   text-shadow: 0 0 1px #add8e6, 0 0 1px #add8e6, 0 0 1px #add8e6, 0 0 2px #add8e6, 0 0 5px #add8e6, 0 0 10px #add8e6, 0 0 15px #add8e6;
 }
-
 nav li .active {
   text-shadow: 0 0 1px #add8e6, 0 0 1px #add8e6, 0 0 1px #add8e6, 0 0 2px #add8e6, 0 0 5px #add8e6, 0 0 10px #add8e6, 0 0 15px #add8e6;
 }
@@ -114,11 +101,9 @@ main {
   min-height: calc(100vh - 195px);
   color: #b1b1b1;
   box-shadow: inset 0 0 8px #000000;
-  color: #b1b1b1;
   margin-top: -77px;
   padding-top: 77px;
 }
-
 main img {
   filter: drop-shadow(0 0 8px #000);
 }
@@ -148,11 +133,6 @@ h5 {
   height: 100%;
 }
 
-.columna {
-  padding: 0px 145px 30px;
-  text-align: justify;
-}
-
 .centrarColIndex {
   min-height: calc(100vh - 272px);
 }
@@ -168,6 +148,11 @@ h5 {
 .fila {
   width: 85%;
   margin: 20px;
+}
+
+.columna {
+  padding: 0px 145px 30px;
+  text-align: justify;
 }
 
 .columna h2,
@@ -212,7 +197,6 @@ footer {
   height: 120px;
   width: 100%;
 }
-
 footer p {
   margin-bottom: 10px;
 }
@@ -223,11 +207,10 @@ footer p {
 
 #boxContacto {
   padding: 20px 40px;
-  border-radius: 12px;
+  border-radius: 15px;
   margin: 25px;
   border: 1px solid #ccc;
 }
-
 #boxContacto textarea,
 #boxContacto input {
   width: -webkit-fill-available;
@@ -239,7 +222,6 @@ footer p {
   transition-timing-function: linear;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
 }
-
 .transicionBrillo:hover {
   box-shadow: 0 0 8px #add8e6;
 }
@@ -247,7 +229,6 @@ footer p {
 button {
   transition: all 0.2s ease-in-out;
 }
-
 button:hover {
   transform: scale(1.01);
 }
@@ -267,9 +248,9 @@ a {
 /* Background Animation */
 .bg {
   -webkit-animation: slide 3s ease-in-out 1 alternate;
-  animation: slide 3s ease-in-out 1 alternate;
+          animation: slide 3s ease-in-out 1 alternate;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   background-image: linear-gradient(-60deg, #3f4650 50%, #2a2e35 50%);
   bottom: 0;
   left: -50%;
@@ -283,19 +264,18 @@ a {
 .bg2 {
   animation-direction: alternate-reverse;
   -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .bg3 {
   -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 @-webkit-keyframes slide {
   0% {
     transform: translateX(-25%);
   }
-
   100% {
     transform: translateX(25%);
   }
@@ -305,12 +285,10 @@ a {
   0% {
     transform: translateX(-25%);
   }
-
   100% {
     transform: translateX(25%);
   }
 }
-
 /* FadeInDown Animation */
 .animated {
   -webkit-animation-duration: 1s;
@@ -334,25 +312,21 @@ a {
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
-
   100% {
     opacity: 1;
     transform: none;
   }
 }
-
 @keyframes fadeInDown {
   0% {
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
-
   100% {
     opacity: 1;
     transform: none;
   }
 }
-
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -363,22 +337,18 @@ a {
   0% {
     transform: scale(1, 1);
   }
-
   100% {
     transform: scale(1.05, 1.05);
   }
 }
-
 @keyframes aumentar {
   0% {
     transform: scale(1, 1);
   }
-
   100% {
     transform: scale(1.05, 1.05);
   }
 }
-
 .animarHover:hover {
   -webkit-animation-name: aumentar;
   animation-name: aumentar;
@@ -389,22 +359,18 @@ a {
   100% {
     transform: scale(1, 1);
   }
-
   0% {
     transform: scale(1.05, 1.05);
   }
 }
-
 @keyframes disminuir {
   100% {
     transform: scale(1, 1);
   }
-
   0% {
     transform: scale(1.05, 1.05);
   }
 }
-
 .animarHover:not(:hover) {
   -webkit-animation-name: disminuir;
   animation-name: disminuir;
@@ -416,25 +382,21 @@ a {
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
   }
-
   100% {
     opacity: 1;
     transform: none;
   }
 }
-
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
   }
-
   100% {
     opacity: 1;
     transform: none;
   }
 }
-
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
@@ -446,25 +408,21 @@ a {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
   }
-
   100% {
     opacity: 1;
     transform: none;
   }
 }
-
 @keyframes fadeInRight {
   0% {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
   }
-
   100% {
     opacity: 1;
     transform: none;
   }
 }
-
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
@@ -475,58 +433,36 @@ a {
   0% {
     transform: scale3d(1, 1, 1);
   }
-
-  10%,
-  20% {
+  10%, 20% {
     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
-
-  30%,
-  50%,
-  70%,
-  90% {
+  30%, 50%, 70%, 90% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-
-  40%,
-  60%,
-  80% {
+  40%, 60%, 80% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
-
   100% {
     transform: scale3d(1, 1, 1);
   }
 }
-
 @keyframes tada {
   0% {
     transform: scale3d(1, 1, 1);
   }
-
-  10%,
-  20% {
+  10%, 20% {
     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
-
-  30%,
-  50%,
-  70%,
-  90% {
+  30%, 50%, 70%, 90% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-
-  40%,
-  60%,
-  80% {
+  40%, 60%, 80% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
-
   100% {
     transform: scale3d(1, 1, 1);
   }
 }
-
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;
@@ -538,23 +474,19 @@ a {
     opacity: 0;
     transform: scale3d(0.3, 0.3, 0.3);
   }
-
   50% {
     opacity: 1;
   }
 }
-
 @keyframes zoomIn {
   0% {
     opacity: 0;
     transform: scale3d(0.3, 0.3, 0.3);
   }
-
   50% {
     opacity: 1;
   }
 }
-
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
@@ -568,7 +500,6 @@ a {
     -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
-
   60% {
     opacity: 1;
     transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
@@ -576,7 +507,6 @@ a {
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }
-
 @keyframes zoomInDown {
   0% {
     opacity: 0;
@@ -584,7 +514,6 @@ a {
     -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
-
   60% {
     opacity: 1;
     transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
@@ -592,7 +521,6 @@ a {
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }
-
 .zoomInDown {
   -webkit-animation-name: zoomInDown;
   animation-name: zoomInDown;
@@ -603,30 +531,24 @@ a {
   0% {
     overflow: hidden;
   }
-
   99% {
     overflow: hidden;
   }
-
   100% {
     overflow: visible;
   }
 }
-
 @keyframes HideOverflow {
   0% {
     overflow: hidden;
   }
-
   99% {
     overflow: hidden;
   }
-
   100% {
     overflow: visible;
   }
 }
-
 .HideOverflow {
   -webkit-animation-name: HideOverflow;
   animation-name: HideOverflow;
@@ -668,12 +590,10 @@ a {
   align-items: stretch;
   padding: 30px;
 }
-
-.grid>article {
+.grid > article {
   border: 1px solid #ccc;
 }
-
-.grid>article img {
+.grid > article img {
   max-width: 100%;
 }
 
@@ -681,7 +601,7 @@ a {
   padding: 0 20px 20px;
 }
 
-.text>button,
+.text > button,
 .boxBotones input {
   margin-top: 10px;
   border: solid 1px #fff;
@@ -691,7 +611,7 @@ a {
   margin: 5px;
 }
 
-.text>button:hover,
+.text > button:hover,
 .boxBotones input:hover {
   border: solid 1px #fff !important;
 }
@@ -701,98 +621,71 @@ a {
   html {
     zoom: 150%;
   }
-
   main {
     min-height: calc(49vh - 4px);
   }
-
-  .centrarColIndex {
-    min-height: unset;
-  }
-
-  .centrarColDescargar {
-    min-height: unset;
-  }
-
-  .centrarBoxContacto {
+  .centrarColIndex,
+.centrarColDescargar,
+.centrarBoxContacto {
     min-height: unset;
   }
 }
-
 @media (max-width: 992px) {
   main {
     min-height: calc(100vh - 212px);
   }
-
-  .centrarColIndex {
+  .centrarColIndex,
+.centrarColDescargar {
     min-height: unset;
   }
-
-  .centrarColDescargar {
-    min-height: unset;
-  }
-
   .boxColumnas {
     flex-direction: column;
   }
-
   .grid {
     grid-template-columns: auto auto;
   }
-
   .pasos {
     min-height: unset;
   }
 }
-
 @media (max-width: 768px) {
   main {
     min-height: calc(100vh - 189px);
   }
-
   header {
     line-height: 0 !important;
   }
-
   .boxColumnas {
     flex-direction: column;
     padding: 0;
     margin: 0;
   }
-
   h1 {
     font-size: 1.5rem;
     text-align: center;
   }
-
   .columna {
     padding: 0px 45px 30px;
   }
-
-  nav li {
-    height: 50px !important;
-    border-bottom: solid 1px grey;
-  }
-
   nav {
     height: 78px;
     width: 100%;
   }
-
+  nav li {
+    height: 50px !important;
+    border-bottom: solid 1px grey;
+  }
   nav ul {
     flex-direction: column;
     border: solid 1px grey;
   }
-
   #navMenu {
     display: none;
   }
-
   .pasos {
     margin: 15px 5px 0;
     padding: 0 10px 5px;
   }
-
   #expandir {
     display: block;
     font-weight: 600;
@@ -800,91 +693,69 @@ a {
     text-align: center;
     padding: 39px 16px;
   }
-
   /*Para Mobile usamos CheckBox Hack, ya que no reconce Hover y en esta instancia no podemos utilizar JavaScript*/
-  #toggle:checked~#navMenu {
+  #toggle:checked ~ #navMenu {
     display: block;
   }
-
-  #toggle:checked~#expandir {
+  #toggle:checked ~ #expandir {
     /*Estaba jugando con transform y el menú hamburguesa quedó como un signo "-", me gustó y lo dejé*/
     transform: rotateX(80deg);
   }
-
-  #toggle:not(:checked)~#navMenu {
+  #toggle:not(:checked) ~ #navMenu {
     display: none;
   }
-
   .bloqueImagenes img:nth-child(1) {
     display: none;
   }
-
   .bloqueImagenes img:nth-child(2) {
     width: 100%;
     height: unset;
   }
 }
-
 @media (max-width: 576px) {
   main {
     min-height: calc(100vh - 260px);
   }
-
   .centrarBoxContacto {
     min-height: calc(100vh - 337px);
   }
-
   header {
     flex-direction: column;
   }
-
   footer {
     flex-direction: column;
     justify-content: center;
   }
-
   .boton {
     padding: 5px 35px 5px 35px;
   }
-
-  #boxContacto label {
-    display: none;
-  }
-
   table {
     text-align: left;
   }
-
   table tr:nth-child(2) td:nth-child(6),
-  table tr:nth-child(3) td:nth-child(6),
-  table tr:nth-child(4) td:nth-child(6),
-  table th:nth-child(6),
-  table tr:nth-child(2) td:nth-child(5),
-  table tr:nth-child(3) td:nth-child(5),
-  table tr:nth-child(4) td:nth-child(5),
-  table th:nth-child(5) {
+table tr:nth-child(3) td:nth-child(6),
+table tr:nth-child(4) td:nth-child(6),
+table th:nth-child(6),
+table tr:nth-child(2) td:nth-child(5),
+table tr:nth-child(3) td:nth-child(5),
+table tr:nth-child(4) td:nth-child(5),
+table th:nth-child(5) {
     display: none;
   }
-
   .grid {
     grid-template-columns: auto;
   }
-
   #boxContacto {
     padding: 20px 30px;
   }
 }
-
 @media (max-width: 360px) {
   main {
     min-height: calc(100vh - 270px);
     margin-top: -95px;
     padding-top: 95px;
   }
-
   #boxContacto {
     padding: 20px 20px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
