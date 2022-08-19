@@ -40,7 +40,7 @@
     }
   
     .columna {
-      padding: 0px 45px 30px;
+      padding: 0px 105px 30px !important;
     }
   
     nav {
@@ -68,7 +68,7 @@
     }
   
     #expandir {
-      display: block;
+      display: block !important;
       font-weight: 600;
       color: $secondaryColor;
       text-align: center;
@@ -113,6 +113,10 @@
       justify-content: center;
     }
   
+    .columna {
+      padding: 0px 35px 30px !important;
+    }
+
     .boton {
       padding: 5px 35px 5px 35px;
     }
@@ -144,8 +148,8 @@
   @media (max-width: 472px) {
     main {
       min-height: calc(100vh - 270px);
-      margin-top: -95px;
-      padding-top: 95px;
+      margin-top: -95px !important;
+      padding-top: 95px !important;
     }
   
     #boxContacto {
