@@ -1,0 +1,36 @@
+/* Grid para Blog */
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  align-items: stretch;
+  padding: 30px;
+
+  &>article {
+    border: 1px solid #ccc;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.text {
+  padding: 0 20px 20px;
+}
+
+.text>button,
+.boxBotones input {
+  margin-top: 10px;
+  border: solid 1px $secondaryColor;
+}
+
+.boxBotones input {
+  margin: 5px;
+}
+
+.text>button:hover,
+.boxBotones input:hover {
+  border: solid 1px $secondaryColor  !important;
+}

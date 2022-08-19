@@ -1,0 +1,28 @@
+/* Pasos y Tablas para Guía */
+
+.pasos {
+  min-height: 155px;
+  background-color: $opacityColor;
+  box-shadow: $shadowSize $opacityColor;
+  margin: 35px 5px 0;
+  padding: 20px;
+  border-radius: map-get($rounded, "medium");
+}
+
+.tablaGuia {
+  background-color: $opacityColor;
+  box-shadow: $shadowSize $opacityColor;
+  text-align: center;
+  border-radius: map-get($rounded, "large");
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+
+.tablaGuia td,
+.tablaGuia th {
+  max-width: 75px;
+}
+
+.fullWidth {
+  max-width: unset !important;
+}
