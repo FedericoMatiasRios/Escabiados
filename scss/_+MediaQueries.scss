@@ -1,158 +1,168 @@
 /* Media Queries */
 @media (max-width: 1041px) {
-    main {
-      min-height: calc(100vh - 212px);
-    }
+  main {
+    min-height: calc(100vh - 212px);
   }
-  
-  @media (max-width: 992px) {
-    .boxColumnas {
-      flex-direction: column;
-    }
-  
-    .grid {
-      grid-template-columns: auto auto;
-    }
-  
-    .pasos {
-      min-height: unset;
-    }
+}
+
+@media (max-width: 992px) {
+  .boxColumnas {
+    flex-direction: column;
   }
-  
-  @media (max-width: 768px) {
-    main {
-      min-height: calc(100vh - 189px);
-    }
-  
-    header {
-      line-height: 0 !important;
-    }
-  
-    .boxColumnas {
-      flex-direction: column;
-      padding: 0;
-      margin: 0;
-    }
-  
-    h1 {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-  
-    .columna {
-      padding: 0px 105px 30px !important;
-    }
-  
-    nav {
-      height: 78px;
-      width: 100%;
-  
-      li {
-        height: 50px !important;
-        border-bottom: solid 1px grey;
-      }
-  
-      ul {
-        flex-direction: column;
-        border: solid 1px grey;
-      }
-    }
-  
-    #navMenu {
-      display: none;
-    }
-  
-    .pasos {
-      margin: 15px 5px 0;
-      padding: 0 10px 5px;
-    }
-  
-    #expandir {
-      display: block !important;
-      font-weight: 600;
-      color: $secondaryColor;
-      text-align: center;
-      padding: 39px 16px;
-    }
-  
-    /*Para Mobile usamos CheckBox Hack, ya que no reconce Hover y en esta instancia no podemos utilizar JavaScript*/
-    #toggle:checked~#navMenu {
-      display: block;
-    }
-  
-    #toggle:checked~#expandir {
-      /*Estaba jugando con transform y el menú hamburguesa quedó como un signo "-", me gustó y lo dejé*/
-      transform: rotateX(80deg);
-    }
-  
-    #toggle:not(:checked)~#navMenu {
-      display: none;
-    }
-  
-    .bloqueImagenes img:nth-child(1) {
-      display: none;
-    }
-  
-    .bloqueImagenes img:nth-child(2) {
-      width: 100%;
-      height: unset;
-    }
+
+  .grid {
+    grid-template-columns: auto auto;
   }
-  
-  @media (max-width: 576px) {
-    main {
-      min-height: calc(100vh - 260px);
-    }
-  
-    header {
-      flex-direction: column;
-    }
-  
-    footer {
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .columna {
-      padding: 0px 35px 30px !important;
+
+  .pasos {
+    min-height: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    min-height: calc(100vh - 189px);
+  }
+
+  header {
+    line-height: 0 !important;
+  }
+
+  .boxColumnas {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .columna {
+    padding: 0px 105px 30px !important;
+  }
+
+  nav {
+    height: 78px;
+    width: 100%;
+
+    li {
+      height: 50px !important;
+      border-bottom: solid 1px grey;
     }
 
-    .boton {
-      padding: 5px 35px 5px 35px;
-    }
-  
-    table {
-      text-align: left;
-  
-      tr:nth-child(2) td:nth-child(6),
-      tr:nth-child(3) td:nth-child(6),
-      tr:nth-child(4) td:nth-child(6),
-      th:nth-child(6),
-      tr:nth-child(2) td:nth-child(5),
-      tr:nth-child(3) td:nth-child(5),
-      tr:nth-child(4) td:nth-child(5),
-      th:nth-child(5) {
-        display: none;
-      }
-    }
-  
-    .grid {
-      grid-template-columns: auto;
-    }
-  
-    #boxContacto {
-      padding: 20px 30px;
+    ul {
+      flex-direction: column;
+      border: solid 1px grey;
     }
   }
-  
-  @media (max-width: 472px) {
-    main {
-      min-height: calc(100vh - 270px);
-      margin-top: -95px !important;
-      padding-top: 95px !important;
-    }
-  
-    #boxContacto {
-      padding: 20px 20px;
+
+  #navMenu {
+    display: none;
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  .pasos {
+    margin: 15px 5px 0;
+    padding: 0 10px 5px;
+  }
+
+  #expandir {
+    display: block !important;
+    font-weight: 600;
+    color: $secondaryColor;
+    text-align: center;
+    padding: 39px 16px;
+  }
+
+  /*Para Mobile usamos CheckBox Hack, ya que no reconce Hover y en esta instancia no podemos utilizar JavaScript*/
+  #toggle:checked~#navMenu {
+    display: block;
+  }
+
+  #toggle:checked~#expandir {
+    /*Estaba jugando con transform y el menú hamburguesa quedó como un signo "-", me gustó y lo dejé*/
+    transform: rotateX(80deg);
+  }
+
+  #toggle:not(:checked)~#navMenu {
+    display: none;
+  }
+
+  .bloqueImagenes img:nth-child(1) {
+    display: none;
+  }
+
+  .bloqueImagenes img:nth-child(2) {
+    width: 100%;
+    height: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    min-height: calc(100vh - 260px);
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav {
+    height: 56px;
+    margin-top: -15px;
+  }
+
+  #expandir {
+    padding: 28px 16px;
+  }
+
+  .columna {
+    padding: 0px 35px 30px !important;
+  }
+
+  .boton {
+    padding: 5px 35px 5px 35px;
+  }
+
+  table {
+    text-align: left;
+
+    tr:nth-child(2) td:nth-child(6),
+    tr:nth-child(3) td:nth-child(6),
+    tr:nth-child(4) td:nth-child(6),
+    th:nth-child(6),
+    tr:nth-child(2) td:nth-child(5),
+    tr:nth-child(3) td:nth-child(5),
+    tr:nth-child(4) td:nth-child(5),
+    th:nth-child(5) {
+      display: none;
     }
   }
+
+  .grid {
+    grid-template-columns: auto;
+  }
+
+  #boxContacto {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 472px) {
+  main {
+    min-height: calc(100vh - 270px);
+    margin-top: -95px !important;
+    padding-top: 95px !important;
+  }
+
+  #boxContacto {
+    padding: 20px 20px;
+  }
+}

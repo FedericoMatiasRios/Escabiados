@@ -432,6 +432,7 @@
   }
   #navMenu {
     display: none;
+    border-radius: 0px 0px 25px 25px;
   }
   .pasos {
     margin: 15px 5px 0;
@@ -473,6 +474,13 @@
   footer {
     flex-direction: column;
     justify-content: center;
+  }
+  nav {
+    height: 56px;
+    margin-top: -15px;
+  }
+  #expandir {
+    padding: 28px 16px;
   }
   .columna {
     padding: 0px 35px 30px !important;
