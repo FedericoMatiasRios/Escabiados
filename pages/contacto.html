@@ -54,35 +54,33 @@
         <!-- SECTION 1 - Caja de contacto -->
         <section class="flexGridCell">
             <div id="boxContacto" class="transicionBrillo">
-                <form action="#">
+                <form action="https://mailthis.to/fmr" method="POST" encType="multipart/form-data">
                     <table>
                         <tr>
                             <td>
-                                <input class="paddingInput" type="text" name="nombre" id="nombre" placeholder="Nombre"
-                                    required>
+                                <input class="paddingInput" type="text" name="name" id="name"
+                                    placeholder="Nombre completo" required>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input class="paddingInput" type="text" name="apellido" id="apellido"
-                                    placeholder="Apellido" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input class="paddingInput" type="email" name="mail" id="mail"
+                                <input class="paddingInput" type="email" name="_replyto" id="email"
                                     placeholder="ejemplo@mail.com" required>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <textarea class="paddingInput" name="mensaje" id="mensaje" rows="6" cols="30"
+                                <textarea class="paddingInput" name="message" id="message" rows="6" cols="30"
                                     placeholder="Escriba aquí su mensaje y le responderemos a la brevedad..."
                                     required></textarea>
                             </td>
                         </tr>
                     </table>
                     <br>
+                    <input type="hidden" name="_subject" value="Mensaje desde Escabiados">
+                    <input type="hidden" name="_after" value="https://www.escabiados.com/">
+                    <input type="hidden" name="_honeypot" value="">
+                    <input type="hidden" name="_confirmation" value="">
                     <div class="boxBotones">
                         <input class="btn btn-dark" type="submit">
                         <input class="btn btn-danger" type="reset" value="Borrar">
@@ -94,13 +92,16 @@
     <!-- FOOTER -->
     <footer>
         <div class="flexGridCell">
-            <p>Copyright</p>
+            <p>© 2022 Federico Matias Rios</p>
         </div>
         <div class="flexGridCell">
             <div class="bloqueRedes">
-                <a href="#"><img src="../img/instagram.webp" alt="Instagram" width="50"></a>
-                <a href="#"><img src="../img/facebook.webp" alt="Facebook" width="50"></a>
-                <a href="#"><img src="../img/twitter.webp" alt="Twitter" width="50"></a>
+                <a href="https://www.instagram.com/escabiados_app/"><img src="../img/instagram.webp" alt="Instagram"
+                        width="50"></a>
+                <a href="https://www.facebook.com/escabiadosapp"><img src="../img/facebook.webp" alt="Facebook"
+                        width="50"></a>
+                <a href="https://twitter.com/escabiados_app"><img src="../img/twitter.webp" alt="Twitter"
+                        width="50"></a>
             </div>
         </div>
     </footer>
